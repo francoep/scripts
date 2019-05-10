@@ -53,7 +53,7 @@ for fname in args.fnames:
             writemol(args.data_root, rec, recout)
             
         for lig in ligs:
-            if lig == '#':
+            if lig == '#' or '#' in lig:
                 break
             if lig not in seenlig:
                 seenlig.add(lig)
